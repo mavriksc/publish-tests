@@ -30,6 +30,7 @@ dependencies {
         exclude("com.squareup.okhttp3:okhttp")
     }
     implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.11")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")

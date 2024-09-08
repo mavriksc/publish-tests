@@ -1,0 +1,46 @@
+header {
+    height:94px;
+}
+.title{
+    padding-top: 12px;
+    padding-left: 100px;
+}
+
+.contentContainer {
+    display:flex;
+    flex-direction: row;
+}
+.left {
+    min-width:300px;
+}
+.right {
+    flex:1;
+}
+
+.btn {
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+div.collapse {
+    display: none;
+}
+
+div.filtered {
+    display: none;
+}
+
+.branch {
+    padding: 2px 2px 2px 30px;
+}
+.selected{
+    background-color: #7cf4f9;
+}
+
+iframe {
+    width: 100%;
+    height: 90vh;
+    aspect-ratio: auto;
+}

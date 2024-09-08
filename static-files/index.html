@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GL-DLS-JJTB</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+<header>
+    <div class="contentContainer">
+    <img  class="left logo" src="img/assurant.png" alt="logo">
+    <h1 class="title right">GL-DLS jUnit Jacoco test results browser ™®©</h1>
+    </div>
+</header>
+<div class="contentContainer">
+    <div class="left">
+        <div><label>Branch Search: <input  id="branchSearch" type="text" onkeyup="filterBranches(this)"></label></div>
+        <div id="appList"></div>
+    </div>
+    <div class="right">
+        <iframe id="showReport" title="report"></iframe>
+    </div>
+</div>
+<script src="sidebar.js"></script>
+</body>
+</html>
