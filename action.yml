@@ -3,4 +3,4 @@ description: 'Push jUnit Jacoco test results to S3'
 
 runs:
   using: 'docker'
-  image: 'docker://smcarlisle/publish-tests:latest'
+  image: 'docker://smcarlisle/publish-tests:1'
