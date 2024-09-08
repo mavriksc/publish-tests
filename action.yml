@@ -20,3 +20,11 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.aws-access-key-id }}
+    - ${{ inputs.aws-secret-access-key }}
+    - ${{ inputs.bucket-name }}
+    - ${{ inputs.path-tests }}
+    - ${{ inputs.publisher-setup }}
+    - ${{ github.ref_name}}
+    - ${{ github.repository}}

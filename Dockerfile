@@ -10,6 +10,7 @@ RUN ./gradlew --refresh-dependencies clean bootJar
 FROM amazoncorretto:17-alpine AS app
 
 COPY ./static-files /app/static-files/
+COPY ./docker/entrypoint.sh /app/
 COPY --from=build /bld/build/libs/publish-tests.jar /app/
 WORKDIR /app
-CMD ["java","-jar","publish-tests.jar"]
+ENTRYPOINT ["bash","./entrypoint.sh"]
