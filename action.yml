@@ -17,6 +17,12 @@ inputs:
     description: '🫸🕸️🗃️'
     required: false
     default: false
+  ref_name:
+    description: '🛣️'
+    required: true
+  repository:
+    description: '🛣️'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -26,5 +32,5 @@ runs:
     - ${{ inputs.bucket-name }}
     - ${{ inputs.path-tests }}
     - ${{ inputs.publisher-setup }}
-    - ${{ github.ref_name}}
-    - ${{ github.repository}}
+    - ${{ inputs.ref_name}}
+    - ${{ inputs.repository}}
