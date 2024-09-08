@@ -15,4 +15,4 @@ COPY ./docker/entrypoint.sh /app/
 COPY --from=build /bld/build/libs/publish-tests.jar /app/
 WORKDIR /app
 RUN chmod +x /app/entrypoint.sh
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]

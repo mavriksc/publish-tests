@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ "$#" -ne 7 ]; then
     echo "required args AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, BUCKET_NAME, PATH_TESTS, PUBLISHER_SETUP, GITHUB_REF_NAME, GITHUB_REPOSITORY"
