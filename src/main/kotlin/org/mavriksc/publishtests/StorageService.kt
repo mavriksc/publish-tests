@@ -10,5 +10,4 @@ class StorageService {
     @Bean
     fun s3Client() = S3Client.builder().apply { config.region ="us-east-1" }.build()
 
-
 }

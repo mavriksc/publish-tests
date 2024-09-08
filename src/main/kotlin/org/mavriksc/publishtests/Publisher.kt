@@ -70,6 +70,7 @@ class Publisher(val s3Client: S3Client) {
             contentType = Files.probeContentType(src.toPath())
             contentLength = bs.contentLength
         }
+        println("Pushing $src to $destination")
         return s3Client.putObject(put)
     }
 
