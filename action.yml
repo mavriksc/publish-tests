@@ -1,10 +1,22 @@
 name: 'PushJJTRTS3'
 description: 'Push jUnit Jacoco test results to S3'
 inputs:
-  who-to-greet:
-    description: 'Who to greet'
+  aws-access-key-id:
+    description: '🔑'
     required: true
-    default: 'World'
+  aws-secret-access-key:
+    description: '🤫'
+    required: true
+  bucket-name:
+    description: '🪣'
+    required: true
+  path-tests:
+    description: '🛣️'
+    required: true
+  publisher-setup:
+    description: '🫸🕸️🗃️'
+    required: false
+    default: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
