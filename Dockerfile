@@ -12,5 +12,6 @@ FROM amazoncorretto:17-alpine AS app
 
 COPY ./static-files /app/static-files/
 COPY --from=build /bld/build/libs/publish-tests.jar /app/
+RUN chmod +x /app/publish-tests.jar
 WORKDIR /app
-CMD ["java","-jar","publish-tests.jar"]
+CMD ["java","-jar","/app/publish-tests.jar"]
