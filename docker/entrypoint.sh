@@ -13,4 +13,4 @@ export PUBLISHER_SETUP=$5
 export GITHUB_REF_NAME=$6
 export GITHUB_REPOSITORY=$7
 
-exec java -jar publish-test.jar
+exec java -jar /app/publish-test.jar
