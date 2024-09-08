@@ -1,9 +1,5 @@
 name: 'PushJJTRTS3'
 description: 'Push jUnit Jacoco test results to S3'
-inputs:
-  path-tests:
-    description: '🛣️'
-    required: true
 runs:
   using: 'docker'
   image: 'docker://smcarlisle/publish-tests:1'
