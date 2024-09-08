@@ -4,3 +4,4 @@ description: 'Push jUnit Jacoco test results to S3'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+#build and push a tag and use that here maybe so things are faster
